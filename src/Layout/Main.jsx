@@ -9,7 +9,7 @@ import RightSideNav from '../Pages/Common/RightSideNav/RightSideNav';
 const Main = () => {
     return (
         <div>
-            <Header></Header>
+            <Header />
             <Container>
                 <Row>
                     <Col lg="2" className='d-none d-lg-block'>
@@ -18,7 +18,7 @@ const Main = () => {
                     <Col lg="7">
                         <Outlet />
                     </Col>
-                    <Col lg="3">
+                    <Col lg="3" className='d-none d-lg-block'>
                         <RightSideNav />
                     </Col>
                 </Row>
